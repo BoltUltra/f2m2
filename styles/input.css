@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-krub;
+}
+
+.hero {
+  height: 30rem;
+}
+
+.sub-hero {
+  background: url(../assets/images/hero-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cocoa {
+  background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/images/cocoa.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.lemon {
+  background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/images/lemon.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.tomato {
+  background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/images/tomato.png);
+  background-size: cover;
+  background-position: top;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  color: #FBAC13 !important;
+}
+.home-hero{
+    background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../assets/images/tomato.png);
+    background-size: cover;
+    background-position: top;
+}
