@@ -15,13 +15,31 @@
   <header class="">
     <!-- Navigation menu of the website -->
     <nav class="">
-      
+      <div
+        class="flex md:flex-row flex-col item-center md:justify-between justify-center md:px-20 py-5 bg-[#F8F8F8] md:space-y-0 space-y-3 px-3">
+        <div class="flex items-center space-x-1 border px-5 py-2 justify-center">
+          <i class="fa-solid fa-phone text-green"></i>
+          <p class="text-gray-70">Call us: +2349076553421</p>
+        </div>
+
+        <div class="flex items-center md:justify-start md:w-auto w-full justify-center">
+          <div class="flex items-center space-x-1 border px-5 py-2 md:w-auto w-full justify-center">
+            <i class="fa-regular fa-circle-check text-green"></i>
+            <a class="text-gray-70" href="./signUp.html">Sign up</a>
+          </div>
+          <div class=" bg-primary flex items-center space-x-1 border px-5 py-2 md:w-auto w-full justify-center">
+            <i class="fa-light fa-key-skeleton text-green"></i>
+            <a class="text-gray-70" href="./login.html">LogIn</a>
+          </div>
+        </div>
+      </div>
+
       <div class="flex justify-between items-center md:px-20 px-3 mt-5">
         <div class="md:block hidden" id="search-container">
           <input type="text" name="search" id="search-input" placeholder="Search products and categories"
             class="placeholder:text-sm placeholder:font-light border outline-none p-2">
-            <button onclick="search()"><i class="fa-light fa-magnifying-glass bg-primary text-white p-3"></i></button>
-          
+          <button onclick="search()"><i class="fa-light fa-magnifying-glass bg-primary text-white p-3"></i></button>
+
         </div>
         <img src="./assets/images/logo.svg" alt="logo" class="w-24">
         <div class="flex items-center md:space-x-5 space-x-3 md:text-base text-sm">
@@ -35,11 +53,12 @@
           </div>
           <div class="flex items-center space-x-2">
             <i class="fa-thin fa-cart-shopping"></i>
-            <button class="bg-primary text-white py-2 px-1 w-32 rounded-xl text-sm view-cart-btn" onclick="viewCart()">Cart</button>
+            <button class="bg-primary text-white py-2 px-1 w-32 rounded-xl text-sm view-cart-btn"
+              onclick="viewCart()">Cart</button>
           </div>
         </div>
       </div>
-      
+
       <div>
         <ul class="flex items-center justify-around bg-[#FFF7E7] py-5 md:px-20 px-3">
           <li class="md:px-20 px-5 md:text-base text-sm hover:bg-primary hover:py-1 hover:rounded-md cursor-pointer"><a
@@ -66,7 +85,8 @@
           <div class="swiper-button-next"></div>
         </div>
         <div class="swiper-wrapper md:px-10">
-          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Banana product-item" data-product-id="1">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Banana product-item"
+            data-product-id="1">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
                 <img class="" src="./assets/images/fruits/bunch-plantain.png" alt="" class="mx-auto w-1/2">
@@ -90,11 +110,13 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm add-to-cart-btn" onclick="addToCart(1)">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm add-to-cart-btn"
+                  onclick="addToCart(1)">Add to cart</button>
               </div>
             </div>
           </div>
-          <div class="swiper-slide product-container" data-product-name="Fresh Unripe Banana product-item" data-product-id="2">
+          <div class="swiper-slide product-container" data-product-name="Fresh Unripe Banana product-item"
+            data-product-id="2">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
                 <img class="" src="./assets/images/fruits/unripe-banana.png" alt="" class="mx-auto">
@@ -118,11 +140,13 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm add-to-cart-btn" onclick="addToCart(2)">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm add-to-cart-btn"
+                  onclick="addToCart(2)">Add to cart</button>
               </div>
             </div>
           </div>
-          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Cherries product-item" data-product-id="3">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Cherries product-item"
+            data-product-id="3">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
                 <img class="" src="./assets/images/fruits/strawberries.png" alt="" class="mx-auto">
@@ -146,11 +170,13 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm add-to-cart-btn" onclick="addToCart(3)">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm add-to-cart-btn"
+                  onclick="addToCart(3)">Add to cart</button>
               </div>
             </div>
           </div>
-          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Banana product-item" data-product-id="4">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Banana product-item"
+            data-product-id="4">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
                 <img class="" src="./assets/images/fruits/bunch-plantain.png" alt="" class="mx-auto">
@@ -174,11 +200,13 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm add-to-cart-btn" onclick="addToCart(4)">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm add-to-cart-btn"
+                  onclick="addToCart(4)">Add to cart</button>
               </div>
             </div>
           </div>
-          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Cucumber product-item" data-product-id="5">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Cucumber product-item"
+            data-product-id="5">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
                 <img class="" src="./assets/images/fruits/cucumber.png" alt="" class="mx-auto">
@@ -202,14 +230,17 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="5">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="5">Add to cart</button>
               </div>
             </div>
           </div>
-          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Watermelon product-item" data-product-id="6">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Watermelon product-item"
+            data-product-id="6">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
-                <img class="md:h-full object-cover py-10" src="./assets/images/fruits/watermelon.png" alt="" class="mx-auto">
+                <img class="md:h-full object-cover py-10" src="./assets/images/fruits/watermelon.png" alt=""
+                  class="mx-auto">
                 <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Ripe Watermelon
                   <br> 1 Bunch
                 </p>
@@ -230,14 +261,17 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="6">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="6">Add to cart</button>
               </div>
             </div>
           </div>
-          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Blueberries product-item" data-product-id="7">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Blueberries product-item"
+            data-product-id="7">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
-                <img class="h-full object-cover py-9" src="./assets/images/fruits/blueberries.png" alt="" class="mx-auto">
+                <img class="h-full object-cover py-9" src="./assets/images/fruits/blueberries.png" alt=""
+                  class="mx-auto">
                 <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Ripe Blueberries
                   <br> 1 Bunch
                 </p>
@@ -258,14 +292,17 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="7">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="7">Add to cart</button>
               </div>
             </div>
           </div>
-          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Apples product-item" data-product-id="8">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Apples product-item"
+            data-product-id="8">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
-                <img class="h-full object-cover py-10" src="./assets/images/fruits/red-apples.png" alt="" class="mx-auto">
+                <img class="h-full object-cover py-10" src="./assets/images/fruits/red-apples.png" alt=""
+                  class="mx-auto">
                 <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Ripe Apples
                   <br> 1 Bunch
                 </p>
@@ -286,14 +323,17 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="8">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="8">Add to cart</button>
               </div>
             </div>
           </div>
-          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Green Apples product-item" data-product-id="9">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Green Apples product-item"
+            data-product-id="9">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
-                <img class="h-full object-cover py-10" src="./assets/images/fruits/green-apples.png" alt="" class="mx-auto">
+                <img class="h-full object-cover py-10" src="./assets/images/fruits/green-apples.png" alt=""
+                  class="mx-auto">
                 <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Ripe Green Apple
                   <br> 1 Bunch
                 </p>
@@ -314,11 +354,13 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="9">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="9">Add to cart</button>
               </div>
             </div>
           </div>
-          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Grapes product-item" data-product-id="10">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Grapes product-item"
+            data-product-id="10">
             <div class="border rounded-md py-5 px-2">
               <div class="text-center space-y-3">
                 <img class="h-full object-cover py-9" src="./assets/images/fruits/grapes.png" alt="" class="mx-auto">
@@ -342,7 +384,8 @@
               </div>
 
               <div class="">
-                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm mt-5 product-item" data-product-id="10">Add to cart</button>
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm mt-5 product-item"
+                  data-product-id="10">Add to cart</button>
               </div>
             </div>
           </div>
@@ -350,879 +393,938 @@
       </div>
     </section>
 
-      <section class="my-10">
-        <div class="bg-[#D6D6D6] w-full flex mb-10">
-          <p class="bg-[#552530] text-white pl-5 pr-20 py-2">Vegetables</p>
+    <section class="my-10">
+      <div class="bg-[#D6D6D6] w-full flex mb-10">
+        <p class="bg-[#552530] text-white pl-5 pr-20 py-2">Vegetables</p>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="flex">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper mySwiper">
-          <div class="flex">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-          <div class="swiper-wrapper md:px-10">
-            <div class="swiper-slide product-container" data-product-name="Fresh Ripe Carrots product-item" data-product-id="11">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-44 md:object-cover" src="./assets/images/fresh carrots.png" alt="" class="mx-auto w-1/2">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Carrots
-                    <br> 1 Basket
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N4,500</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 12 Hours</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full">Sold 75%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
+        <div class="swiper-wrapper md:px-10">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Carrots product-item"
+            data-product-id="11">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 md:object-cover" src="./assets/images/fresh carrots.png" alt="" class="mx-auto w-1/2">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Carrots
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N4,500</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 12 Hours</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
                   </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="11">Add to cart</button>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide product-container" data-product-name="Cayenne Pepper product-item" data-product-id="12">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-44 object-cover" src="./assets/images/cayenne pepper.png" alt="" class="mx-auto">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Cayenne Pepper
-                    <br> 1 Basket
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N7,000 - N20,500</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 11 Hours</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full">Sold 80%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="12">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide product-container" data-product-name="Green Brocolli product-item" data-product-id="13">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-44 object-cover" src="./assets/images/green brocolli.png" alt="" class="mx-auto">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Green Brocolli
-                    <br> 1 Basket
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N5,500 - N10,500</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full">Sold 80%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="13">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide product-container" data-product-name="Fresh Water Leaf product-item" data-product-id="14">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-full object-cover pt-10" src="./assets/images/fresh waterleaf.png" alt="" class="mx-auto">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Water Leaf
-                    <br> 1 dozen Bunch
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N3,600</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 9 Hours</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full pt-5">Sold 77%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="14">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide product-container" data-product-name="Fresh Green Lettuce product-item" data-product-id="15">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-full object-cover py-9" src="./assets/images/fresh green lettuce.png" alt="" class="mx-auto">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Green Lettuce
-                    <br> 1 Bushel
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N4,500 - N7,000</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 2 days - 2hrs
-                    10mins 40secs</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full pt-5">Sold 75%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="15">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide product-container" data-product-name="Fresh Onions product-item" data-product-id="16">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-44 object-cover" src="./assets/images/fresh onion.png" alt="" class="mx-auto">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Onions
-                    <br> 1 Basket
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N20,000</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 4 Hours</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full">Sold 60%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="16">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slideproduct-container" data-product-name="Spring Onions product-item" data-product-id="17">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-44 object-cover" src="./assets/images/Frame 295.png" alt="" class="mx-auto">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Spring Onions
-                    <br> 1 Basket
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N31,700</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full">Sold 75%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="17">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide product-container" data-product-name="Green Scotch Bonnet product-item" data-product-id="18">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-44 object-cover" src="./assets/images/spring onion.png" alt="" class="mx-auto">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Green Scotch Bonnet
-                    <br> 1 Basket
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N6,000</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 3 Hours</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full">Sold 75%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="18">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide product-container" data-product-name="Yellow Scotch Bonnet product-item" data-product-id="19">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-full object-cover py-9" src="./assets/images/yellow scotch bonnet.png" alt="" class="mx-auto">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Yellow Scotch bonnet
-                    <br> 1 Basket
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N4,500 - N7,000</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 7 Hours</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full mt-10">Sold 75%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2 mt-5">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="19">Add to cart</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide product-container" data-product-name="Red Scotch Bonnet product-item" data-product-id="20">
-              <div class="border rounded-md py-5 px-2">
-                <div class="text-center space-y-3">
-                  <img class="h-full object-cover py-9" src="./assets/images/red scotch bonnet.png" alt="" class="mx-auto">
-                  <p class="text-[#1E1616C7] md:text-base text-sm">Red scotch bonnet
-                    <br> 1 Bushel
-                  </p>
-                </div>
-                <div class="my-3 text-center">
-                  <hr>
-                  <p class="text-green font-bold text-lg py-0.5">N4,500 - N7,000</p>
-                  <hr>
-                  <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 2 days</p>
-                  <hr>
-                  <div class="text-left flex items-center justify-between py-3">
-                    <p class="font-semibold w-full mt-5">Sold 75%</p>
-                    <div class="bg-[#077B5F4D] w-full rounded-full h-2 mt-5">
-                      <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="">
-                  <button class="bg-primary text-white py-3 w-full rounded-xl text-sm mt-10 product-item" data-product-id="20">Add to cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-                <section class="my-10">
-                  <div class="bg-[#D6D6D6] w-full flex mb-10">
-                    <p class="bg-[#552530] text-white pl-5 pr-20 py-2">Legumes</p>
-                  </div>
-                  <div class="swiper mySwiper">
-                    <div class="flex">
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
-                    </div>
-                    <div class="swiper-wrapper md:px-10">
-                      <div class="swiper-slide product-container" data-product-name="Red Kidney Beans product-item" data-product-id="21">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/red kidney beans.png" alt="" class="mx-auto w-1/2">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Red Kidney Beans
-                              <br> 1 Sack
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N21,500</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 Hour</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="21">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Fresh Green Peas product-item" data-product-id="22">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/fresh green peas.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Green Peas
-                              <br> 1 Basket
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N24,500</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>2hrs 25mins 30secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 80%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="22">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Sack of Soy Bean product-item" data-product-id="23">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover py-1" src="./assets/images/sack of soy beans.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Sack of Soy Bean
-                              <br> 1 Sack
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N24,500</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>1hrs 28mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 80%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="23">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="White Bean product-item" data-product-id="24">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover py-1" src="./assets/images/white beans.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">White Bean
-                              <br> 1 Sack
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N23,600</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 28mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 77%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="24">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Chick Peas product-item" data-product-id="25">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover py-1" src="./assets/images/chickpeas.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Chick Peas
-                              <br> 1 Sack
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N28,000</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>2hrs
-                              10mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="25">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Chick Black Bean product-item" data-product-id="26">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover py-1" src="./assets/images/blackbeans.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Black Bean
-                              <br> 1 Sack
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N28,000</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 3hrs
-                              10mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 90%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="26">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Brown Beans product-item" data-product-id="27">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover py-2" src="./assets/images/brown beans.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Brown Beans
-                              <br> 1 Sack
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N22,000</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>4hrs
-                              10mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="27">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="White Beans product-item" data-product-id="28">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/spring onion.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">White Beans
-                              <br> 1 Sack
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N700 - N2600</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>5hrs
-                              10mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="28">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Black Beans product-item" data-product-id="29">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/blackbeans.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Black Beans
-                              <br> 1 Sack
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N29,000</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>6hrs
-                              10mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="29">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Peanuts product-item" data-product-id="30">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/peanuts.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Peanuts
-                              <br> 1 Basket
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N4,500 - N7,000</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 4hrs
-                              10mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="30">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
 
-                <section class="my-10">
-                  <div class="bg-[#D6D6D6] w-full flex mb-10">
-                    <p class="bg-[#552530] text-white pl-5 pr-20 py-2">Tubers</p>
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="11">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Cayenne Pepper product-item"
+            data-product-id="12">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/cayenne pepper.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Cayenne Pepper
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N7,000 - N20,500</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 11 Hours</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 80%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
                   </div>
-                  <div class="swiper mySwiper">
-                    <div class="flex">
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
-                    </div>
-                    <div class="swiper-wrapper md:px-10">
-                      <div class="swiper-slide product-container" data-product-name="Irish Potatoes product-item" data-product-id="31">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/irish potatoes.png" alt="" class="mx-auto w-1/2">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Irish Potatoes
-                              <br> 1 Bushel
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N11,500</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>3hrs 2mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="31">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="White Sweet Potatoes product-item" data-product-id="32">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover py-2" src="./assets/images/white sweet potatoes.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">White Sweet Potatoes
-                              <br> 1 Basket
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N12,800</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>2hrs 25mins 30secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 80%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="32">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Cassava product-item" data-product-id="33">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/cassava.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Cassava
-                              <br> 1 Basket
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N9,600</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>11hrs 28mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 80%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="33">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="New Yam product-item" data-product-id="34">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-full object-cover py-2" src="./assets/images/new yam.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">New Yam 
-                              <br> 1 Piece
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N500</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>1hr 28mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full mt-5">Sold 77%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2 mt-5">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="34">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Fresh Ginger product-item" data-product-id="35">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover py-1" src="./assets/images/fresh ginger.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Ginger
-                              <br> 1 Basket
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N16,300</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day - 2hrs
-                              10mins 40secs</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="35">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      
-                </section>
-                <section class="my-10">
-                  <div class="bg-[#D6D6D6] w-full flex mb-10">
-                    <p class="bg-[#552530] text-white pl-5 pr-20 py-2">Sweet Deals</p>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="12">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Green Brocolli product-item"
+            data-product-id="13">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/green brocolli.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Green Brocolli
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N5,500 - N10,500</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 80%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
                   </div>
-                  <div class="swiper mySwiper">
-                    <div class="flex">
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
-                    </div>
-                    <div class="swiper-wrapper md:px-10">
-                      <div class="swiper-slide product-container" data-product-name="Fresh Ripe Berries product-item" data-product-id="36">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/fresh ripe cherries.png" alt="" class="mx-auto w-1/2">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Ripe Berries
-                              <br> 1 Basket
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N11,500</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 2 Hours</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="36">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Fresh Pineapples product-item" data-product-id="37">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/fresh pineapples.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Pineapples
-                              <br> 1 Basket
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N12,800</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 Hour</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 80%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="37">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Fresh Tomatoes product-item" data-product-id="38">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/fresh round plum tomatoes.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Tomatoes
-                              <br> 1 Basket
-                            </p>
-                          </div>
-                          <div class="my-2 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N9,600</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 2 Hours</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 80%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item" data-product-id="38">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Fresh Yellow Corn product-item" data-product-id="39">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/fresh yellow corn.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Yellow Corn
-                              <br> 1 Piece
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N5000</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 77%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="39">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide product-container" data-product-name="Raw Brown Rice product-item" data-product-id="40">
-                        <div class="border rounded-md py-5 px-2">
-                          <div class="text-center space-y-3">
-                            <img class="h-44 object-cover" src="./assets/images/raw brown rice.png" alt="" class="mx-auto">
-                            <p class="text-[#1E1616C7] md:text-base text-sm">Raw Brown Rice
-                              <br> 1 Basket
-                            </p>
-                          </div>
-                          <div class="my-3 text-center">
-                            <hr>
-                            <p class="text-green font-bold text-lg py-0.5">N16,300</p>
-                            <hr>
-                            <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day</p>
-                            <hr>
-                            <div class="text-left flex items-center justify-between py-3">
-                              <p class="font-semibold w-full">Sold 75%</p>
-                              <div class="bg-[#077B5F4D] w-full rounded-full h-2">
-                                <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
-                              </div>
-                            </div>
-                          </div>
-            
-                          <div class="">
-                            <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item" data-product-id="40">Add to cart</button>
-                          </div>
-                        </div>
-                      </div>                   
-                          </section>
-                          <div class="flex justify-center items-center py-10">
-                          <button class="bg-primary text-white py-3 px-3 w-32 rounded-xl text-sm view-cart-btn" onclick="viewCart()">View Cart</button>
-                        </div>
-                        </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="13">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Fresh Water Leaf product-item"
+            data-product-id="14">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-full object-cover pt-10" src="./assets/images/fresh waterleaf.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Water Leaf
+                  <br> 1 dozen Bunch
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N3,600</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 9 Hours</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full pt-5">Sold 77%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="14">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Fresh Green Lettuce product-item"
+            data-product-id="15">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-full object-cover py-9" src="./assets/images/fresh green lettuce.png" alt=""
+                  class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Green Lettuce
+                  <br> 1 Bushel
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N4,500 - N7,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 2 days - 2hrs
+                  10mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full pt-5">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="15">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Fresh Onions product-item"
+            data-product-id="16">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/fresh onion.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Onions
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N20,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 4 Hours</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 60%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="16">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slideproduct-container" data-product-name="Spring Onions product-item"
+            data-product-id="17">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/Frame 295.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Spring Onions
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N31,700</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="17">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Green Scotch Bonnet product-item"
+            data-product-id="18">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/spring onion.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Green Scotch Bonnet
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N6,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 3 Hours</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="18">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Yellow Scotch Bonnet product-item"
+            data-product-id="19">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-full object-cover py-9" src="./assets/images/yellow scotch bonnet.png" alt=""
+                  class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Yellow Scotch bonnet
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N4,500 - N7,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 7 Hours</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full mt-10">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2 mt-5">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="19">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Red Scotch Bonnet product-item"
+            data-product-id="20">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-full object-cover py-9" src="./assets/images/red scotch bonnet.png" alt=""
+                  class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Red scotch bonnet
+                  <br> 1 Bushel
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N4,500 - N7,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 2 days</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full mt-5">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2 mt-5">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm mt-10 product-item"
+                  data-product-id="20">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-10">
+      <div class="bg-[#D6D6D6] w-full flex mb-10">
+        <p class="bg-[#552530] text-white pl-5 pr-20 py-2">Legumes</p>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="flex">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-wrapper md:px-10">
+          <div class="swiper-slide product-container" data-product-name="Red Kidney Beans product-item"
+            data-product-id="21">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/red kidney beans.png" alt="" class="mx-auto w-1/2">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Red Kidney Beans
+                  <br> 1 Sack
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N21,500</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 Hour</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="21">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Fresh Green Peas product-item"
+            data-product-id="22">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/fresh green peas.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Green Peas
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N24,500</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>2hrs 25mins 30secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 80%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="22">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Sack of Soy Bean product-item"
+            data-product-id="23">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover py-1" src="./assets/images/sack of soy beans.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Sack of Soy Bean
+                  <br> 1 Sack
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N24,500</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>1hrs 28mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 80%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="23">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="White Bean product-item" data-product-id="24">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover py-1" src="./assets/images/white beans.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">White Bean
+                  <br> 1 Sack
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N23,600</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 28mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 77%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="24">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Chick Peas product-item" data-product-id="25">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover py-1" src="./assets/images/chickpeas.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Chick Peas
+                  <br> 1 Sack
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N28,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>2hrs
+                  10mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="25">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Chick Black Bean product-item"
+            data-product-id="26">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover py-1" src="./assets/images/blackbeans.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Black Bean
+                  <br> 1 Sack
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N28,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 3hrs
+                  10mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 90%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="26">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Brown Beans product-item" data-product-id="27">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover py-2" src="./assets/images/brown beans.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Brown Beans
+                  <br> 1 Sack
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N22,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>4hrs
+                  10mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="27">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="White Beans product-item" data-product-id="28">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/spring onion.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">White Beans
+                  <br> 1 Sack
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N700 - N2600</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>5hrs
+                  10mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="28">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Black Beans product-item" data-product-id="29">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/blackbeans.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Black Beans
+                  <br> 1 Sack
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N29,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>6hrs
+                  10mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="29">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Peanuts product-item" data-product-id="30">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/peanuts.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Peanuts
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N4,500 - N7,000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 4hrs
+                  10mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="30">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-10">
+      <div class="bg-[#D6D6D6] w-full flex mb-10">
+        <p class="bg-[#552530] text-white pl-5 pr-20 py-2">Tubers</p>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="flex">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-wrapper md:px-10">
+          <div class="swiper-slide product-container" data-product-name="Irish Potatoes product-item"
+            data-product-id="31">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/irish potatoes.png" alt="" class="mx-auto w-1/2">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Irish Potatoes
+                  <br> 1 Bushel
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N11,500</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>3hrs 2mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="31">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="White Sweet Potatoes product-item"
+            data-product-id="32">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover py-2" src="./assets/images/white sweet potatoes.png" alt=""
+                  class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">White Sweet Potatoes
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N12,800</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>2hrs 25mins 30secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 80%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="32">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Cassava product-item" data-product-id="33">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/cassava.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Cassava
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N9,600</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>11hrs 28mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 80%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="33">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="New Yam product-item" data-product-id="34">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-full object-cover py-2" src="./assets/images/new yam.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">New Yam
+                  <br> 1 Piece
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N500</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i>1hr 28mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full mt-5">Sold 77%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2 mt-5">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="34">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Fresh Ginger product-item"
+            data-product-id="35">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover py-1" src="./assets/images/fresh ginger.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Ginger
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N16,300</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day - 2hrs
+                  10mins 40secs</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="35">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+    </section>
+    <section class="my-10">
+      <div class="bg-[#D6D6D6] w-full flex mb-10">
+        <p class="bg-[#552530] text-white pl-5 pr-20 py-2">Sweet Deals</p>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="flex">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-wrapper md:px-10">
+          <div class="swiper-slide product-container" data-product-name="Fresh Ripe Berries product-item"
+            data-product-id="36">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/fresh ripe cherries.png" alt=""
+                  class="mx-auto w-1/2">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Ripe Berries
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N11,500</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 2 Hours</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="36">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Fresh Pineapples product-item"
+            data-product-id="37">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/fresh pineapples.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Pineapples
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N12,800</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 Hour</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 80%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="37">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Fresh Tomatoes product-item"
+            data-product-id="38">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/fresh round plum tomatoes.png" alt=""
+                  class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Tomatoes
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-2 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N9,600</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 2 Hours</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 80%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 mt-5 w-full rounded-xl text-sm product-item"
+                  data-product-id="38">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Fresh Yellow Corn product-item"
+            data-product-id="39">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/fresh yellow corn.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Fresh Yellow Corn
+                  <br> 1 Piece
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N5000</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 77%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="39">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide product-container" data-product-name="Raw Brown Rice product-item"
+            data-product-id="40">
+            <div class="border rounded-md py-5 px-2">
+              <div class="text-center space-y-3">
+                <img class="h-44 object-cover" src="./assets/images/raw brown rice.png" alt="" class="mx-auto">
+                <p class="text-[#1E1616C7] md:text-base text-sm">Raw Brown Rice
+                  <br> 1 Basket
+                </p>
+              </div>
+              <div class="my-3 text-center">
+                <hr>
+                <p class="text-green font-bold text-lg py-0.5">N16,300</p>
+                <hr>
+                <p class="text-xs py-0.5"><i class="fa-thin fa-clock"></i> 1 day</p>
+                <hr>
+                <div class="text-left flex items-center justify-between py-3">
+                  <p class="font-semibold w-full">Sold 75%</p>
+                  <div class="bg-[#077B5F4D] w-full rounded-full h-2">
+                    <div class="bg-[#077B5F] w-[75%] rounded-full h-2"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="">
+                <button class="bg-primary text-white py-3 w-full rounded-xl text-sm product-item"
+                  data-product-id="40">Add to cart</button>
+              </div>
+            </div>
+          </div>
+    </section>
+    <div class="flex justify-center items-center py-10">
+      <button class="bg-primary text-white py-3 px-3 w-32 rounded-xl text-sm view-cart-btn" onclick="viewCart()">View
+        Cart</button>
+    </div>
+  </div>
 
   <!-- Footer section of the website -->
   <footer>
@@ -1272,10 +1374,10 @@
     <section class="bg-[#1D201F] py-5 md:px-20 px-5 flex items-center justify-between">
       <img src="./assets/images/logo.svg" alt="logo" class="w-20">
       <p class="md:space-x-10 space-x-5 text-white text-md">
-        <a href="./404.html">  <i class="fab fa-facebook-f"></i></a>
-        <a href="./404.html">  <i class="fab fa-instagram"></i></a>
-        <a href="./404.html">  <i class="fab fa-twitter"></i></a>
-      <a href="./404.html">   <i class="fab fa-youtube"></i></a>
+        <a href="./404.html"> <i class="fab fa-facebook-f"></i></a>
+        <a href="./404.html"> <i class="fab fa-instagram"></i></a>
+        <a href="./404.html"> <i class="fab fa-twitter"></i></a>
+        <a href="./404.html"> <i class="fab fa-youtube"></i></a>
       </p>
     </section>
   </footer>
